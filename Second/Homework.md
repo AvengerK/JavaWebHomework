@@ -21,7 +21,7 @@ mysql>create table...
 mysql>insert into student values(...)
 ```
 ![输入数据](https://raw.githubusercontent.com/AvengerK/JavaWebHomeworkImageResource/master/Second/image/insertIntoStudent.png)
-![输入数据](https://raw.githubusercontent.com/AvengerK/JavaWebHomeworkImageResource/master/Second/iamge/insertIntoCourse.png)
+![输入数据](https://raw.githubusercontent.com/AvengerK/JavaWebHomeworkImageResource/master/Second/image/insertIntoCourse.png)
 
 ###4.查询
 ####查询各位同学的选课清单
