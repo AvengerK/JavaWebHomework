@@ -1,1 +1,1 @@
-# JavaWebHomeworkImageResource
+# JavaWebHomework
