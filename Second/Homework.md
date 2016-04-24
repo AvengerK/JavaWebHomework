@@ -20,4 +20,15 @@ mysql>create table...
 ```SQL
 mysql>insert into student values(...)
 ```
-![输入数据]()
+![输入数据](https://raw.githubusercontent.com/AvengerK/JavaWebHomeworkImageResource/master/Second/insertIntoStudent.png)
+![输入数据](https://raw.githubusercontent.com/AvengerK/JavaWebHomeworkImageResource/master/Second/insertIntoCourse.png)
+
+###4.查询
+####查询各位同学的选课清单
+![search_1](https://raw.githubusercontent.com/AvengerK/JavaWebHomeworkImageResource/master/Second/selectCoursesCondition.png)
+
+####查询男生
+![search_boys](https://raw.githubusercontent.com/AvengerK/JavaWebHomeworkImageResource/master/Second/selectMalesCourses.png)
+
+####查询每门课
+![search_each_course](https://raw.githubusercontent.com/AvengerK/JavaWebHomeworkImageResource/master/Second/selectEachCourse.png)
