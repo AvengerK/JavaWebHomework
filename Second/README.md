@@ -24,11 +24,11 @@ mysql>insert into student values(...)
 ![输入数据](https://raw.githubusercontent.com/AvengerK/JavaWebHomeworkImageResource/master/Second/image/insertIntoCourse.png)
 
 ###4.查询
-####查询各位同学的选课清单
+* 查询各位同学的选课清单
 ![search_1](https://raw.githubusercontent.com/AvengerK/JavaWebHomeworkImageResource/master/Second/image/selectCoursesCondition.png)
 
-####查询男生
+* 查询男生
 ![search_boys](https://raw.githubusercontent.com/AvengerK/JavaWebHomeworkImageResource/master/Second/image/selectMalesCourses.png)
 
-####查询每门课
+* 查询每门课
 ![search_each_course](https://raw.githubusercontent.com/AvengerK/JavaWebHomeworkImageResource/master/Second/image/selectEachCourse.png)
