@@ -20,7 +20,7 @@ out.println("Hello World");
 ### 3.将程序部署到tomcat服务器，通过浏览器查看
 ![部署到tomcat](image/tomcat.png)
 
-### 4.在网页中显示数据库的信息
+### 4.[在网页中显示数据库的信息](https://github.com/AvengerK/testJavaWebJSP/tree/master/javaWebCourse)
 * 建立了一个[表的实体类](resources/Student.java)
 ```Java
 public class Student {
