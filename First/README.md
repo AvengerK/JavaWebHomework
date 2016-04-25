@@ -21,7 +21,7 @@ out.println("Hello World");
 ![部署到tomcat](image/tomcat.png)
 
 ### 4.在网页中显示数据库的信息
-* 建立了一个表的实体类
+* 建立了一个[表的实体类](resources/Student.java)
 ```Java
 public class Student {
     private int id;
@@ -50,7 +50,7 @@ public class Student {
     }
 }
 ```
-* 建立一个工具类
+* 建立一个[工具类](resources/StudentOperation.java)
 ```Java
 public class StudentOperation {
     public List readStudent(){
