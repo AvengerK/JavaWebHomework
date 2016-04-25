@@ -109,6 +109,7 @@ public class StudentOperation {
 ```
 * JSP中
 ```Java
+...
 try {
       StudentOperation studentOperation = new StudentOperation();
       List<Student> list = studentOperation.readStudent();
@@ -119,6 +120,7 @@ try {
     </tr>
     <%     }
     }catch (Exception e){e.printStackTrace();}
+    ...
 ```
 
 存在问题，无法在网页中看到结果，但执行工具类中的main方法可以看到结果。
