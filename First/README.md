@@ -107,7 +107,7 @@ public class StudentOperation {
     }
 }
 ```
-* JSP中
+* [JSP file](resources/index.jsp)
 ```Java
 ...
 try {
