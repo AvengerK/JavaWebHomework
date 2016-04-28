@@ -122,7 +122,5 @@ try {
     }catch (Exception e){e.printStackTrace();}
     ...
 ```
-
-存在问题，无法在网页中看到结果，但执行工具类中的main方法可以看到结果。<br>
-        `java.sql.SQLException: No suitable driver found for jdbc:mysql://localhost:3306/student`
-        `java.lang.ClassNotFoundException: com.mysql.jdbc.Driver`
+结果如下：<br>
+![显示数据库的内容]()
