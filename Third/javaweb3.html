@@ -26,6 +26,24 @@
         }
       }
     </script>
+    <script type="text/javascript">
+      function is_empty(field,alerttext){
+        with(field){
+          if (value==null||value=="") {
+            alert(alerttext);
+            return false;
+          }
+          else {
+            return true;
+          }
+        }
+      }
+    </script>
+    <script type="text/javascript">
+      function validate_form(form){
+        
+      }
+    </script>
     <title>在线报名</title>
   </head>
   <body>
@@ -154,7 +172,7 @@
   <div style="width:60%">
     <br><br>
   <form class="" align="center">
-    <button type="button" name="submit" onclick="test()">tijiao</button>
+    <button type="button" name="submit" onclick="test()">提交</button>
     <button type="button" name="clear"  onclick="clearInput('input','input2')">重写</button>
   </form>
   </div>
