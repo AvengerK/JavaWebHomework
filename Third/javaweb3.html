@@ -59,6 +59,14 @@
         }
       }
     </script>
+    <script type="text/javascript">
+      function validPhone(){
+        var phone = document.getElementById('phone');
+        if(phone.value.length!=11){
+          alert("invalid phone number");
+        }
+      }
+    </script>
     <title>在线报名</title>
   </head>
   <body>
@@ -79,7 +87,7 @@
     <input type="text" name="idnum" value="" style="width:250px">
     <br><br>
     手机：
-    <input type="text" name="phone" value="" class="not_null">
+    <input type="text" name="phone" value="" class="not_null" id="phone">
     <span class="mark">* </span>
     <br><br>
     联系地址：
@@ -175,7 +183,7 @@
       <input type="radio" name="recommend" value="no">否
     </div>
     <div style="clear:left;position:relative;top:20px" align="center">
-    <button type="button" name="submit" onclick="is_empty(),validEmail()">提交</button>
+    <button type="button" name="submit" onclick="is_empty(),validEmail(),validPhone()">提交</button>
     <button type="button" name="clear" onclick="clearAllInput()">清除</button>
   </div>
   </form>
