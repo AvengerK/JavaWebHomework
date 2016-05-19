@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <script type="text/javascript">
       function clearAllInput(){
-        var r=confirm("This will clear all your input! Press OK to continue.");
+        var r=confirm("这将清除你的所有输入，是否确定？");
         if (r==true) {
           var nodes1 = document.getElementById('input1').childNodes;
           var nodes2=document.getElementById('input2').childNodes;
@@ -25,42 +25,49 @@
         }
       }
     </script>
+    <script type="text/javascript">
+        function is_empty(){
+          var elements = document.getElementsByClassName('not_null');
+          var counter=0;
+          for (var i = 0; i < elements.length; i++) {
+            if (elements[i].value==null||elements[i].value=="") {
+              counter++;
+            }
+          }
+          if (counter!=0) {
+            alert('存在未填的项目！');
+          }
+        }
+    </script>
     <title>在线报名</title>
   </head>
   <body>
     <h1 align="center">软件工程师 在线报名</h1>
     <strong style="color:red">带*号为必填部分！</strong>
-    <br>
-    <br>
+    <br><br>
   <form id="input">
     <div style="float:left" id="input1">
     姓名：
     <input type="text" name="name" value="" class="not_null">
     <span class="mark">* </span>
-    <br>
-    <br>
+    <br><br>
     年龄：
     <input type="text" name="age" value="" class="not_null">
     <span class="mark">* </span>
-    <br>
-    <br>
+    <br><br>
     身份证号：
     <input type="text" name="idnum" value="" style="width:250px">
-    <br>
-    <br>
+    <br><br>
     手机：
-    <input type="text" name="phone" value="">
+    <input type="text" name="phone" value="" class="not_null">
     <span class="mark">* </span>
-    <br>
-    <br>
+    <br><br>
     联系地址：
     <input type="text" name="address" value="" style="width:400px">
-    <br>
-    <br>
+    <br><br>
     户口所在地：
     <input type="text" name="address" value="" style="width:400px">
-    <br>
-    <br>
+    <br><br>
     最高学历：
     <select class="" name="edu">
       <option value="university">大学</option>
@@ -103,7 +110,7 @@
     <br><br>
     备注：
     <br><br>
-    <textarea name="" rows="8" cols="70"></textarea>
+    <textarea name="" rows="8" cols="70">excited! □-□</textarea>
   </div>
   <div style="float:left" id="input2">
       性别：
@@ -148,8 +155,8 @@
       <input type="radio" name="recommend" value="no">否
     </div>
     <div style="clear:left;position:relative;top:20px" align="center">
-    <input type="submit" name="submit" value="提交">
-    <button type="button" name="button" onclick="clearAllInput()">清除</button>
+    <button type="button" name="submit" onclick="is_empty()">提交</button>
+    <button type="button" name="clear" onclick="clearAllInput()">清除</button>
   </div>
   </form>
     <br><br>
