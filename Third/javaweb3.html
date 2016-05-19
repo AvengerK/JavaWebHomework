@@ -4,39 +4,26 @@
     <style media="screen" type="text/css">
       .input{margin-left: 40px;width: 50%;float: left}
       .mark{color: red;}
-      .input2{width: 700px;float: left}
     </style>
     <meta charset="utf-8">
     <script type="text/javascript">
-      function clearInput(){
+      function clearAllInput(){
         var r=confirm("This will clear all your input! Press OK to continue.");
         if (r==true) {
-          var nodes = document.getElementById('input').childNodes;
-          for (var i = 0; i < nodes.length; i++) {
-            if (nodes[i].type=='text'||nodes[i].type=='textarea') {
-              nodes[i].value=null;
+          var nodes1 = document.getElementById('input1').childNodes;
+          var nodes2=document.getElementById('input2').childNodes;
+          for (var i = 0; i < nodes1.length; i++) {
+            if (nodes1[i].type=='text'||nodes1[i].type=='textarea') {
+              nodes1[i].value=null;
+            }
+          }
+          for (var i = 0; i < nodes2.length; i++) {
+            if (nodes2[i].type=='text'||nodes2[i].type=='textarea') {
+              nodes2[i].value=null;
             }
           }
         }
       }
-    </script>
-    <!-- <script type="text/javascript">
-      function is_empty(field,alerttext){
-        with(field){
-          if (value==null||value=="") {
-            alert(alerttext);
-            return false;
-          }
-          else {
-            return true;
-          }
-        }
-      }
-    </script> -->
-    <!-- <script type="text/javascript">
-      function validate_form(form){
-
-      } -->
     </script>
     <title>在线报名</title>
   </head>
@@ -46,7 +33,7 @@
     <br>
     <br>
   <form id="input">
-    <div style="float:left">
+    <div style="float:left" id="input1">
     姓名：
     <input type="text" name="name" value="" class="not_null">
     <span class="mark">* </span>
@@ -118,7 +105,7 @@
     <br><br>
     <textarea name="" rows="8" cols="70"></textarea>
   </div>
-  <div style="float:left">
+  <div style="float:left" id="input2">
       性别：
       <input type="radio" name="sex" value="male" checked="checked">男
       <input type="radio" name="sex" value="female">女
@@ -162,14 +149,9 @@
     </div>
     <div style="clear:left;position:relative;top:20px" align="center">
     <input type="submit" name="submit" value="提交">
-    <button type="button" name="clear" onclick="clearInput()">清除</button>
+    <button type="button" name="button" onclick="clearAllInput()">清除</button>
   </div>
-    </form>
-    <!-- <button type="button" name="clear" onclick="clearInput(input)">clear</button> -->
+  </form>
     <br><br>
-  <!-- <form class="" align="center">
-    <button type="button" name="submit" onclick="test()">提交</button>
-    <button type="button" name="clear"  onclick="clearInput('input','input2')">重写</button>
-  </form> -->
   </body>
 </html>
