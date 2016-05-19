@@ -36,6 +36,10 @@
           }
           if (counter!=0) {
             alert('存在未填的必填项目！');
+            return false;
+          }
+          else {
+            return true;
           }
         }
     </script>
@@ -64,6 +68,10 @@
         var phone = document.getElementById('phone');
         if(phone.value.length!=11){
           alert("invalid phone number");
+          return false;
+        }
+        else {
+          return true;
         }
       }
     </script>
